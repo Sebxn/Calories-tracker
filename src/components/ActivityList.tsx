@@ -3,14 +3,15 @@ import { PencilSquareIcon, XCircleIcon } from "@heroicons/react/24/outline"
 
 import { Activity } from "../types"
 import { categories } from "../data/categories"
-import { ActivityActions } from "../reducers/activity-reducer"
+import { useActivity } from "../hooks/useActivity"
 
 
-type ActivityListProps = {
-    activities: Activity[],
-    dispatch: React.Dispatch<ActivityActions>
-}
-export default function ActivityList({activities, dispatch} : ActivityListProps) {
+
+export default function ActivityList() {
+
+    const { state, dispatch } = useActivity()
+
+    const { activities } = state
 
     const categoryName = useMemo(() => (
         category: Activity['category']) => categories.map( cat => cat.id === category ? cat.name : ''), [activities])
