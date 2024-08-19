@@ -1,30 +1,6 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + TailwindCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tracker de Calorías (por ahora solo front)
+https://66b8150f04f2f5c77e435845--wondrous-pithivier-894684.netlify.app
+## Descripcion
+Este proyecto es un Tracker de Calorías web simple construida utilizando React, TypeScript y Tailwind CSS. El objetivo de este proyecto es ayudar a los usuarios a realizar un seguimiento de su ingesta diaria de calorías y, en algunos casos, su gasto calórico a través de la actividad física. Los usuarios ingresan los alimentos que consumen a lo largo del día, tambien permiten registrar el ejercicio realizado, lo que permite estimar cuántas calorías se han quemado. La implementación de useReducer en este proyecto facilita la gestión del estado, lo que contribuye a una estructura de código más organizada y manejable, especialmente en casos donde se requiere un manejo complejo del estado.
